@@ -1,4 +1,4 @@
-package Solution;
+package Day1;
 
 public class Solution {
     public String solution(String my_string, int[] indices) {
