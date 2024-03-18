@@ -15,7 +15,6 @@ public class Solution2 {
         for (int i = 0; i < callings.length; i++) {
         	// 현재 불린 선수의 등수
 			int rank = pla.get(callings[i]);
-
 			// 순서가 바뀔 선수의 이름
 			String name = answer[rank-1];
 			// 현재 등수에 바뀔 선수 이름으로 변경
@@ -25,10 +24,8 @@ public class Solution2 {
 			// Hashmap을 바뀐순서로 다시 재 등록
 			pla.put(callings[i], rank-1);
 			pla.put(name, rank);
-
 		}
 
-	
         return answer;
     }
 }
