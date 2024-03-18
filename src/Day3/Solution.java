@@ -1,7 +1,9 @@
 package Day3;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.List;
 
 public class Solution {
 	/*
@@ -10,6 +12,7 @@ public class Solution {
 	 * 정렬하려 합니다.
 	 */
 	// 내가 문제 푼 방법
+	/*
 	public int[][] solution(int[][] data, String ext, int val_ext, String sort_by) {
 	    int count = 0;
 	    int select = 0;
@@ -108,7 +111,7 @@ public class Solution {
 
 	    return answer;
 	}
-
+*/
 	// 다른사람이 문제 푼 방법
 
 	    public int[][] solution(int[][] data, String ext, int val_ext, String sort_by) {
