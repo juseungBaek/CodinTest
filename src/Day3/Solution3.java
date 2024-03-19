@@ -2,7 +2,7 @@ package Day3;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import java.util.*;
 public class Solution3 {
 
 	/*
@@ -39,9 +39,8 @@ public class Solution3 {
 //	}
 	
 	// 다른사람이 문제 푼 방법
-	import java.util.*;
 
-	class Solution {
+
 	    public int[] solution(String[] name, int[] yearning, String[][] photo) {
 	        int[] answer = new int[photo.length];
 
@@ -66,9 +65,10 @@ public class Solution3 {
 	        }   
 
 	        return answer;
+	        
 	    }
-	   // 이게 훨씬 가독성이 좋다.
-	    
-	}
+		   // 이게 훨씬 가독성이 좋다.
+}  
+
 
 

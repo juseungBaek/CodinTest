@@ -2,21 +2,17 @@ package Test;
 
 import java.util.Arrays;
 
-import Day3.Solution3;
+import Day4.Solution2;
 
 public class Test {
 	public static void main(String[] args) {
+		Solution2 s1 = new Solution2();
+		int n = 15;
+		int m = 2;
+		int[] section = {2,3,7,8,10,13};
 
-		Solution3 s1 = new Solution3();
-
-		String[] name = {"may", "kein", "kain", "radi"};
-		int[] yearning = {5, 10, 1, 3};
-		String[][] photo = {{"may", "kein", "kain", "radi"},{"may", "kein", "brin", "deny"}, {"kon", "kain", "may", "coni"}};
-//		String[] name = {"kali", "mari", "don"};
-//		int[] yearning = {11, 1, 55};
-//		String[][] photo = {{"kali", "mari", "don"}, {"pony", "tom", "teddy"}, {"con", "mona", "don"}};
-		System.out.println(Arrays.toString(s1.solution(name, yearning, photo)));
-		
+//		System.out.println(Arrays.toString(s1.solution(n,m,section)));
+		System.out.println(s1.solution(n,m,section));
 	
 	}
 	
