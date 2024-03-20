@@ -5,40 +5,40 @@ import java.util.Collections;
 import java.util.List;
 //바탕화면 정리
 public class Solution {
-    public int[] solution(String[] wallpaper) {
-    	// i = hegith
-    	// j = width
-        int[] answer = new int[4];
-        List<Integer> mega = new ArrayList<>();
-        List<Integer> coffee = new ArrayList<>();
-        List<Integer> hi = new ArrayList<>();
-        int h = 0;
-        int w = 0;
-        for (int i = 0; i < wallpaper.length; i++) {
-			for (int j = 0; j < wallpaper[0].length(); j++) {
-				if(wallpaper[i].charAt(j)=='#') {
-					mega.add(i);
-					mega.add(j);
-				}
-			}
-		}
-        for (int i = 0; i < mega.size(); i++) {
-			if(i%2==0) {
-				coffee.add(mega.get(i));
-			}else {
-				hi.add(mega.get(i));
-			}
-		}
-       int maxh= Collections.max(coffee);
-       int maxw= Collections.max(hi);
-       int minh= Collections.min(coffee);
-       int minw= Collections.min(hi);
-       answer[0] = minh;
-       answer[1] = minw;
-       answer[2] = maxh+1;
-       answer[3] = maxw+1;
-        return answer;
-    }
+//    public int[] solution(String[] wallpaper) {
+//    	// i = hegith
+//    	// j = width
+//        int[] answer = new int[4];
+//        List<Integer> mega = new ArrayList<>();
+//        List<Integer> coffee = new ArrayList<>();
+//        List<Integer> hi = new ArrayList<>();
+//        int h = 0;
+//        int w = 0;
+//        for (int i = 0; i < wallpaper.length; i++) {
+//			for (int j = 0; j < wallpaper[0].length(); j++) {
+//				if(wallpaper[i].charAt(j)=='#') {
+//					mega.add(i);
+//					mega.add(j);
+//				}
+//			}
+//		}
+//        for (int i = 0; i < mega.size(); i++) {
+//			if(i%2==0) {
+//				coffee.add(mega.get(i));
+//			}else {
+//				hi.add(mega.get(i));
+//			}
+//		}
+//       int maxh= Collections.max(coffee);
+//       int maxw= Collections.max(hi);
+//       int minh= Collections.min(coffee);
+//       int minw= Collections.min(hi);
+//       answer[0] = minh;
+//       answer[1] = minw;
+//       answer[2] = maxh+1;
+//       answer[3] = maxw+1;
+//        return answer;
+//    }
     
     // 다른 사람이 문제 푼 방법
     public int[] solution(String[] wallpaper) {
