@@ -2,17 +2,18 @@ package Test;
 
 import java.util.Arrays;
 
-import Day5.Solution5;
+import Day7.Solution2;
 
 public class Test {
 	public static void main(String[] args) {
-		Solution5 s1 = new Solution5();
-		int[] arr = {0, 0, 0, 1};
-		int idx = 1;
+		Solution2 s1 = new Solution2();
 
-		System.out.println(s1.solution(arr, idx));
-	
+		String s = "banana";
+
+
+		System.out.println(Arrays.toString(s1.solution(s)));
+
+
 	}
-	
 
 }
