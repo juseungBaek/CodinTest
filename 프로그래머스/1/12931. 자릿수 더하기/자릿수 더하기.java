@@ -1,19 +1,15 @@
 
 
 public class Solution {
-    public int solution(int n) {
+   public int solution(int n) {
         int answer = 0;
 
-        String result = n+"";
-        String[] result2 = new String[result.length()];
-        for (int i = 0; i < result.length(); i++) {
-			result2[i]=Character.toString(result.charAt(i));
-		}
-        
-        for (int i = 0; i < result2.length; i++) {
-			answer += Integer.parseInt(result2[i]);
-		}
-
+        while(n!=0){
+            //num을 10으로 나눈 나머지를 sum에 더한다.
+            answer += n%10;
+            //num을 10으로 나눈 값을 다시 num에 저장한다.
+            n /= 10;
+        }
 
         return answer;
     }
